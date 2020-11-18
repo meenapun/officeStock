@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="officesoftware.ManagementController">
+   <children>
+      <Text layoutX="219.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Managemnet for Stocking" />
+      <Text layoutX="113.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+      <Text layoutX="275.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items" />
+      <Text layoutX="430.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase" />
+      <Text layoutX="433.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock" />
+      <Text layoutX="118.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrow" />
+      <ImageView fx:id="catImg" fitHeight="70.0" fitWidth="80.0" layoutX="102.0" layoutY="69.0" onMouseClicked="#displayCat" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/category.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="itemImg" fitHeight="60.0" fitWidth="80.0" layoutX="259.0" layoutY="69.0" onMouseClicked="#displayItems" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/items.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="purchaseImg" fitHeight="60.0" fitWidth="80.0" layoutX="420.0" layoutY="69.0" onMouseClicked="#displayPurchase" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/purchase.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="borrowImg" fitHeight="60.0" fitWidth="80.0" layoutX="105.0" layoutY="180.0" onMouseClicked="#displayBorrow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/borrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stockImg" fitHeight="60.0" fitWidth="80.0" layoutX="423.0" layoutY="179.0" onMouseClicked="#displayStock" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/stock.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

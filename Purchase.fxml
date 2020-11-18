@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="officesoftware.PurchaseController">
+   <children>
+      <Text layoutX="189.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please insert the purchase items" />
+      <Label layoutX="159.0" layoutY="79.0" text="Categories name" />
+      <ComboBox fx:id="catNameBombo" layoutX="261.0" layoutY="77.0" prefWidth="150.0" />
+      <Label layoutX="163.0" layoutY="142.0" text="Item's name" />
+      <ComboBox fx:id="itemNameCombo" layoutX="262.0" layoutY="134.0" prefWidth="150.0" />
+      <Label layoutX="164.0" layoutY="196.0" text="Purchase  Date" />
+      <DatePicker fx:id="purchaseDate" layoutX="263.0" layoutY="192.0" />
+      <Label layoutX="165.0" layoutY="239.0" text="Shop name" />
+      <TextField fx:id="shopNameTxt" layoutX="263.0" layoutY="235.0" />
+      <Label layoutX="168.0" layoutY="281.0" text="Price" />
+      <TextField fx:id="priceTxt" layoutX="261.0" layoutY="278.0" />
+      <Label layoutX="166.0" layoutY="319.0" text="Quantity" />
+      <TextField fx:id="qtyTxt" layoutX="260.0" layoutY="315.0" />
+      <Button fx:id="addBtn" layoutX="242.0" layoutY="354.0" mnemonicParsing="false" text="Add" />
+   </children>
+</AnchorPane>
